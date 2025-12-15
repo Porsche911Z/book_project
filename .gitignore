@@ -1,103 +1,68 @@
- 
+# Python-specific ignores
+pycache/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
 venv/
 .venv/
 env/
-.env/
 ENV/
-venv.bak/
-.venv.bak/
 
+# Environment variables and secrets
+.env
+*.env
 
-.poetry/
-.pipenv/
-.pyenv/
-pypackages/
-
-
-pip-wheel-metadata/
-pip-log.txt
-pip-delete-this-directory.txt
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-parts/
-var/
-sdist/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
-pycache/
-*.py[cod]
-*$py.class
-.so
-
-
-pip-cache/
-.pip-cache/
-pipfile.lock  
-
-
-htmlcov/
-.coverage
-.coverage.
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.pytest_cache/
-.tox/
-.coverage
-
-Jupyter Notebook
-.ipynb_checkpoints
-
-
-.idea/
-.vcs.xml
-.idea/
-*.iml
-*.iws
-*.ipr
-.vscode/
-*.code-workspace
-
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-
+# Logs and databases (если есть локальные файлы БД или логи)
 *.log
 *.sql
 *.sqlite
-.sqlite3
+*.db
 
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
-.env
-.env.local
-.env..local
-*.pem
-config.py
-secrets/
+# OS-specific files
+.DS_Store  # Mac
+Thumbs.db  # Windows
+ehthumbs.db
+Desktop.ini
 
+# Package manager caches
+.pip_cache/
+pip-wheel-metadata/
 
-.docker/
-docker-compose.override.yml
+# Testing and coverage
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
 
+# Build and distribution
+build/
+dist/
+sdist/
+wheels/
+*.egg
+*.eggs/
 
+# Miscellaneous
+*.swp
 *.bak
-*.dump
+*.tmp
+*~
+.tmp_versions/
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
-
-instance/
-.webassets-cache.vscode-server/
-.vscode-server/
+examples/  

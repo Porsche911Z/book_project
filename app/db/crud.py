@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 from .models import Category, Book
+from typing import Optional
 
 # CRUD for Categories
 def create_category(db: Session, title: str):
